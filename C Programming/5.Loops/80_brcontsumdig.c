@@ -1,0 +1,25 @@
+#include <stdio.h>
+int main()
+{
+    int a, sum = 0;
+    printf("Enter a no:");
+    while (1)
+    {
+        scanf("%d", &a);
+        if (a == 0)
+        {
+            break;
+        }
+        else
+        {
+            if (a < 0)
+            {
+                continue;
+            }
+        }
+            sum += a;
+        
+    }
+    printf("Sum %d ", sum);
+    return 0;
+}
