@@ -1,0 +1,22 @@
+# Compiled object files
+*.o
+*.obj
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Build directory
+build/
+
+# Debug / crash files
+*.dSYM/
+*.stackdump
+
+# VS Code / CLion / IDE configs
+.vscode/
+.idea/
+*.swp
+*.swo
+
