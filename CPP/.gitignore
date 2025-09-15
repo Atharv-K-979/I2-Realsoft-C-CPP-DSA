@@ -1,0 +1,48 @@
+# Compiled object files
+*.o
+*.obj
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.i*86
+*.x86_64
+*.hex
+
+# Debug files
+*.dSYM/
+*.stackdump
+*.pch
+
+# Build directories
+build/
+bin/
+debug/
+release/
+
+# IDE / Editor specific
+.vscode/
+.idea/
+*.swp
+*.swo
+*.user
+*.workspace
+*.code-workspace
+
+# Logs
+*.log
+
+# OS-specific
+.DS_Store
+Thumbs.db
+desktop.ini

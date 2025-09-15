@@ -38,8 +38,6 @@ class A{
     friend void B :: swap(A&);
 };
 
-
-
 void B:: swap(A &y){
     int temp = y.a;
     y.a = b;
