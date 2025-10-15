@@ -1,8 +1,11 @@
 {
-    "files.associations": {
-        "iostream": "cpp",
-        "new": "cpp",
-        "iosfwd": "cpp"
-    },
-    "C_Cpp.errorSquiggles": "disabled"
+  "files.associations": {
+    "iostream": "cpp",
+    "new": "cpp",
+    "iosfwd": "cpp"
+  },
+  "C_Cpp.errorSquiggles": "enabled",
+  "code-runner.executorMap": {
+    "cpp": "cd $dir && g++ $fileName -o temp && ./temp && rm temp"
+  }
 }
