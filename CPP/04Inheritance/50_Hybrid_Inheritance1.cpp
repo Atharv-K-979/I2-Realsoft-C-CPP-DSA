@@ -45,15 +45,13 @@ protected:
 public:
     Name() : Number() {}
     ~Name() {}
-    void setData()
+    void setData1()
     {
-        Number::setData();
         cout << "\nName: ";
         cin >> nm;
     }
-    void display()
+    void display1()
     {
-        Number::display();
         cout << "\nName: " << nm << endl;
     }
     string getName() { return nm; }
@@ -66,15 +64,13 @@ protected:
 public:
     Result() : Name(){ tmrk = 0; }
     ~Result() {}
-    void setData()
+    void setData2()
     {
-        Name::setData();
         cout << "\nTotal Marks: ";
         cin >> tmrk;
     }
-    void display()
+    void display2()
     {
-        Name::display();
         cout << "\nTotal Marks: " << tmrk;
     }
     int getTotalMrk() { return tmrk; }
@@ -83,14 +79,10 @@ int main()
 {
     Result r;
     r.setData();
+    r.setData1();
+    r.setData2();
     r.display();
-
-    Number a;
-    a.setData();
-    a.display();
-
-    Number b;
-    b.setData();
-    b.display();
+    r.display1();
+    r.display2();
     return 0;
 }
