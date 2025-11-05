@@ -18,16 +18,21 @@
 #include <unordered_set>
 #include <fstream>
 using namespace std;
-
-int main() {
-    ofstream out("abc.txt");   // can take any name for out
+class STU
+{
     int no;
-    while(1){
-        cout<<"Enter no. ";
-        cin>>no;
-        if(no==0) break;
-        out<<no<<" ";
+    string nm;
+public:
+    STU() { no = 0; }
+    ~STU() {}
+    void set(int a)
+    {
+        no = a;
+        cout << "Enter Name:";
+        cin >> nm;
     }
-    out.close();
-    return 0;
-}
+    void display()
+    {
+        cout << "Numnber:" << no << " Name:" << nm;
+    }
+};

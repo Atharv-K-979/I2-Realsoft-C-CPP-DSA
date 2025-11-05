@@ -17,17 +17,20 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <fstream>
+#include <iostream>
+#include "stu.h"
 using namespace std;
 
 int main() {
-    ofstream out("abc.txt");   // can take any name for out
+    STU s;
     int no;
+    ifstream in;
+    in.open("stu.dat",ios::in | ios::binary);
     while(1){
-        cout<<"Enter no. ";
-        cin>>no;
-        if(no==0) break;
-        out<<no<<" ";
+        in.read((char*)&s,sizeof(s));
+        if(in.eof()) break;
+        s.display();
     }
-    out.close();
+    in.close();
     return 0;
 }

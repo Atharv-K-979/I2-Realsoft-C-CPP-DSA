@@ -17,17 +17,23 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <fstream>
+#include <ostream>
 using namespace std;
 
-int main() {
-    ofstream out("abc.txt");   // can take any name for out
-    int no;
-    while(1){
-        cout<<"Enter no. ";
-        cin>>no;
-        if(no==0) break;
-        out<<no<<" ";
+int main()
+{
+    ifstream sin("stu.txt");
+    int no, mrk;
+    string nm;
+    while (1)
+    {
+        sin >> no >> nm >> mrk;
+        if (sin.eof())
+            break;
+        cout << "\nRoll no: " << no;
+        cout << "\nName :" << nm;
+        cout << "\nMarks: " << mrk;
     }
-    out.close();
+    sin.close();
     return 0;
 }
