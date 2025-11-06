@@ -45,8 +45,6 @@ void displayGraph(){
             a=a->next;
         }
     }
-    
-
 }
 //n=5
 // 1 2 3 0 
